@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculate Distance{% endblock %}
+
+{% block body %}
+    <h1>Calculate Distance</h1>
+
+    {# read and display all flash messages #}
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="alert alert-{{ label }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+    {{ form(form) }}
+{% endblock %}
