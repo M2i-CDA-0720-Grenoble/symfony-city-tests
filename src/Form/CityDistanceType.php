@@ -15,10 +15,12 @@ class CityDistanceType extends AbstractType
     {
         $builder
             ->add('city1', EntityType::class, [
+                'label' => 'First City',
                 'class' => City::class,
                 'choice_label' => 'name',
             ])
             ->add('city2', EntityType::class, [
+                'label' => 'Second City',
                 'class' => City::class,
                 'choice_label' => 'name',
             ])
